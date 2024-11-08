@@ -44,7 +44,7 @@
     img {
       border-radius: 5px;
       width: 100%;
-      max-width: 200px;
+      max-width: 300px; /* Maximum width of image */
       height: auto;
       margin-bottom: 20px;
     }
@@ -54,6 +54,9 @@
       font-weight: 700;
       font-size: 18px;
       margin-bottom: 10px;
+      width: 250px; /* Ensures the heading has the same width as the image */
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Paragraph Styling */
@@ -62,6 +65,9 @@
       font-size: 15px;
       color: hsl(218, 44%, 22%);
       line-height: 1.5;
+      width: 250px; /* Ensures the paragraph has the same width as the image */
+      margin-left: auto;
+      margin-right: auto;
     }
 
     /* Responsive Styling for Larger Screens */
@@ -80,7 +86,6 @@
     }
 
     /* Attribution (Optional) */
-    /* You can uncomment this part if you want to display attribution */
     /*
     .attribution {
       font-size: 11px;
@@ -93,11 +98,15 @@
   </style>
 </head>
 <body>
-  <div class="card">
-    <img src="./images/image-qr-code.png" alt="QR Code" />
-    <p id="heading">Improve your front-end skills by building projects</p>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
+  <!-- Main Landmark -->
+  <main>
+    <!-- Card Content -->
+    <div class="card">
+      <img src="./images/image-qr-code.png" alt="QR Code">
+      <h1 id="heading">Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </main>
   
   <!-- Optional Attribution -->
   <!--
