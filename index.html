@@ -2,27 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Google Fonts: Outfit -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: hsl(212, 45%, 89%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: white;
+      text-align: center;
+      width: 90%;
+      max-width: 320px; /* Maximum width for mobile */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Image Styling */
+    img {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Heading Styling */
+    #heading {
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    /* Paragraph Styling */
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      color: hsl(218, 44%, 22%);
+      line-height: 1.5;
+    }
+
+    /* Responsive Styling for Larger Screens */
+    @media (min-width: 768px) {
+      .card {
+        max-width: 400px; /* Larger max-width for tablets and desktops */
+      }
+
+      #heading {
+        font-size: 20px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+    }
+
+    /* Attribution (Optional) */
+    /* You can uncomment this part if you want to display attribution */
+    /*
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    */
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="QR Code" />
+    <p id="heading">Improve your front-end skills by building projects</p>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+  </div>
   
+  <!-- Optional Attribution -->
+  <!--
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  -->
 </body>
 </html>
